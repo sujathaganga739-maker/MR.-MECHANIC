@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<!-- saved from url=(0057)file:///C:/Users/preetham/.codex/Mr%20Mechanic.html#study -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="theme-color" content="#eeebe3">
+	<meta name="description" content="Friendly, reliable motorcycle servicing at your address. Choose a service and book a home visit with Mr Mechanic.">
+	<title>Mr Mechanic | Home motorcycle service</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com/">
+	<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+	<link href="./Mr. Mechanic_files/css2" rel="stylesheet">
+	<style>
+		:root{color-scheme:light;--ink:#171e19;--sage:#b7c6c2;--red:#ca0013;--paper:#eeebe3;--white:#fff;--muted:#75817b;--line:rgba(183,198,194,.45);--shadow:0 20px 50px -12px rgba(23,30,25,.1);font-family:'Nunito',sans-serif}
+		*{box-sizing:border-box}
+		html{scroll-behavior:smooth;scroll-padding-top:90px}
+		body{margin:0;min-width:320px;background:var(--paper);color:var(--ink);font:600 15px/1.65 'Nunito',sans-serif}
+		button,input,select{font:inherit}
+		button,a{-webkit-tap-highlight-color:transparent}
+		button{color:inherit;cursor:pointer}
+		a{color:inherit}
+		[hidden]{display:none!important}
+		:focus-visible{outline:3px solid rgba(202,0,19,.4);outline-offset:3px}
+		@view-transition{navigation:auto}
+		::view-transition-old(root),::view-transition-new(root){animation-duration:.25s;animation-timing-function:ease-in-out}
+		.site-header{position:sticky;z-index:20;top:0;display:flex;align-items:center;justify-content:space-between;min-height:76px;padding:0 max(5vw,calc((100vw - 1200px)/2));background:rgba(238,235,227,.9);backdrop-filter:blur(16px)}
+		.brand{font-size:23px;font-weight:900;letter-spacing:-.06em;text-decoration:none}
+		.brand-dot{color:var(--red)}
+		.nav{display:flex;align-items:center;gap:clamp(16px,2.4vw,32px)}
+		.nav a{font-size:11px;font-weight:900;letter-spacing:.1em;text-decoration:none;text-transform:uppercase}
+		.nav a:not(.nav-book):hover{color:var(--red)}
+		.nav-book{display:none}
+		.portal-toggle,.button{min-height:46px;display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:0 20px;border:1px solid var(--line);border-radius:999px;background:var(--white);font-size:12px;font-weight:900;text-decoration:none;transition:background .2s,color .2s,border-color .2s,transform .2s}
+		.portal-toggle{border:0;background:var(--red);color:var(--white);box-shadow:0 8px 20px rgba(202,0,19,.18)}
+		.portal-toggle:hover,.button-primary:hover{background:#a90010;transform:translateY(-1px)}
+		.button:hover{border-color:var(--red);color:var(--red)}
+		.button-primary{border-color:var(--red);background:var(--red);color:var(--white)}
+		.button-primary:hover{color:var(--white)}
+		main{width:100%}
+		.wrap{width:min(1120px,calc(100% - 48px));margin-inline:auto}
+		.hero{position:relative;isolation:isolate;min-height:650px;display:grid;grid-template-columns:minmax(0,.92fr) minmax(0,1.08fr);align-items:center;overflow:hidden;margin:16px auto 0;padding:72px clamp(32px,7vw,88px);border-radius:40px;background:var(--white);box-shadow:var(--shadow)}
+		.hero:after{position:absolute;z-index:-1;top:-135px;right:-100px;width:390px;height:390px;border-radius:50%;background:rgba(183,198,194,.2);content:""}
+		.hero-copy{position:relative;z-index:2}
+		.eyebrow,.section-label,.kicker{margin:0 0 14px;color:var(--muted);font-size:10px;font-weight:900;letter-spacing:.16em;text-transform:uppercase}
+		h1,h2,h3,p{margin-top:0}
+		.hero h1{max-width:10ch;margin-bottom:18px;font-size:clamp(42px,5.6vw,68px);font-weight:900;letter-spacing:-.055em;line-height:1.02}
+		.sage{color:var(--sage)}
+		.lede{max-width:38ch;color:#48534d;font-size:16px;font-weight:600;line-height:1.75}
+		.actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:24px}
+		.bike-art{position:relative;z-index:1;width:112%;max-width:670px;justify-self:end;overflow:visible}
+		.bike-art .frame,.bike-art .wheel{fill:none;stroke:var(--ink);stroke-linecap:round;stroke-linejoin:round}
+		.bike-art .frame{stroke-width:9}
+		.bike-art .wheel{stroke-width:7}
+		.bike-art .accent-line{stroke:var(--red);stroke-width:6}
+		.hero-caption{position:absolute;right:6%;bottom:22px;color:var(--muted);font-size:10px;font-weight:900;letter-spacing:.12em;text-transform:uppercase}
+		.section{padding:clamp(68px,9vw,108px) 0}
+		.section-heading{max-width:690px;margin-bottom:34px}
+		.section-heading h2,.split-copy h2{max-width:13ch;margin-bottom:15px;font-size:clamp(34px,4.7vw,56px);font-weight:900;letter-spacing:-.05em;line-height:1.04}
+		.section-heading p:not(.section-label),.split-copy>p:not(.section-label){max-width:52ch;color:#48534d;font-size:15px}
+		.service-model{display:grid;grid-template-columns:.9fr 1.1fr;gap:clamp(32px,7vw,88px);align-items:center}
+		.info-list{overflow:hidden;padding:8px 16px;border:1px solid var(--line);border-radius:24px;background:var(--white)}
+		.info-row{display:grid;grid-template-columns:104px minmax(0,1fr) auto;gap:12px;align-items:center;padding:15px 2px;border-bottom:1px solid var(--line)}
+		.info-row:last-child{border-bottom:0}
+		.info-row dt{color:var(--muted);font-size:10px;font-weight:900;letter-spacing:.12em;text-transform:uppercase}
+		.info-row dd{margin:0;font-size:13px;font-weight:700}
+		.info-row .value{color:var(--ink);font-size:11px;font-weight:900;text-align:right}
+		.drawing-card{padding:20px;border:1px solid var(--line);border-radius:40px;background:var(--white);box-shadow:var(--shadow)}
+		.drawing-card svg{display:block;width:100%;height:auto}
+		.drawing-card figcaption{margin-top:12px;color:var(--muted);font-size:10px;font-weight:800;letter-spacing:.08em;text-transform:uppercase}
+		.study-card{display:grid;grid-template-columns:.7fr 1.3fr;gap:42px;align-items:center;padding:clamp(28px,5vw,60px);border:1px solid var(--line);border-radius:40px;background:var(--white);box-shadow:var(--shadow)}
+		.study-copy h2{max-width:9ch;margin-bottom:12px;font-size:clamp(35px,4vw,52px);font-weight:900;letter-spacing:-.05em;line-height:1.02}
+		.study-copy p:not(.section-label){color:#48534d;font-size:14px}
+		.wheel-panel{padding:20px;border-radius:28px;background:rgba(183,198,194,.14)}
+		.wheel-panel svg{display:block;width:min(100%,400px);margin:auto}
+		.wheel-panel circle,.wheel-panel line{fill:none;stroke:var(--ink);stroke-width:2}
+		.wheel-panel .wheel-track{stroke:rgba(23,30,25,.18);stroke-width:11}
+		.wheel-panel .wheel-progress{stroke:var(--red);stroke-width:11;stroke-linecap:round;transform:rotate(-90deg);transform-origin:100px 100px;transition:stroke-dashoffset .25s ease}
+		.study-controls{display:flex;align-items:center;gap:14px;margin-top:14px}
+		.study-controls input{width:100%;accent-color:var(--red)}
+		.study-readout{min-width:72px;font-size:14px;font-weight:900;text-align:right}
+		.study-note{margin:12px 0 0;color:var(--muted);font-size:11px}
+		.material-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:clamp(30px,7vw,86px);align-items:start}
+		.parts-list{padding:8px 18px;border:1px solid var(--line);border-radius:24px;background:var(--white)}
+		.part-row{display:grid;grid-template-columns:120px minmax(0,1fr) auto;gap:12px;align-items:center;padding:15px 0;border-bottom:1px solid var(--line)}
+		.part-row:last-child{border-bottom:0}
+		.part-row strong{color:var(--muted);font-size:10px;font-weight:900;letter-spacing:.1em}
+		.part-row span{font-size:13px;font-weight:700}
+		.part-row em{font-size:12px;font-style:normal;font-weight:900}
+		.notice{margin-top:20px;padding:16px 18px;border-radius:20px;background:rgba(183,198,194,.2);color:#48534d;font-size:13px}
+		.service-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+		.service-card{position:relative;display:grid;grid-template-columns:52px 1fr auto;gap:14px;align-items:center;min-height:110px;padding:18px;border:1px solid var(--line);border-radius:24px;background:var(--white);text-align:left;transition:border-color .2s,box-shadow .2s,transform .2s}
+		.service-card:hover{transform:translateY(-2px);box-shadow:var(--shadow)}
+		.service-card[aria-pressed="true"]{border-color:rgba(202,0,19,.4);box-shadow:0 0 0 2px rgba(202,0,19,.08)}
+		.service-icon{width:52px;height:52px;display:grid;place-items:center;border-radius:17px;background:rgba(183,198,194,.22);font-size:24px}
+		.service-name{display:block;font-size:15px;font-weight:900;line-height:1.25}
+		.service-meta{display:block;margin-top:5px;color:var(--muted);font-size:11px;font-weight:800}
+		.service-price{color:var(--ink);font-size:14px;font-weight:900;white-space:nowrap}
+		.service-card[aria-pressed="true"] .service-price{color:var(--red)}
+		.service-card[aria-pressed="true"]:after{position:absolute;top:10px;right:10px;width:20px;height:20px;display:grid;place-items:center;border-radius:50%;background:var(--red);color:#fff;font-size:12px;content:"✓"}
+		.booking-band{display:grid;grid-template-columns:1fr auto;gap:20px;align-items:center;margin-top:22px;padding:24px 28px;border:1px solid var(--line);border-radius:28px;background:var(--white);box-shadow:var(--shadow)}
+		.booking-actions{display:flex;align-items:center;gap:10px}
+		.cancel-action{min-height:40px;padding:0 14px;border:1px solid rgba(202,0,19,.25);border-radius:999px;background:#fff;color:var(--red);font-size:11px;font-weight:900}
+		.cancel-action:hover{border-color:var(--red);background:rgba(202,0,19,.06)}
+		.customer-booking-list{display:grid;gap:14px}
+		.customer-booking{padding:20px;border:1px solid var(--line);border-radius:24px;background:var(--white)}
+		.customer-booking-head{display:flex;align-items:center;justify-content:space-between;gap:14px}
+		.customer-booking-head h3{margin:0;font-size:17px;font-weight:900}
+		.customer-booking-details{margin:12px 0;color:#48534d;font-size:12px;line-height:1.75;overflow-wrap:anywhere}
+		.customer-booking .cancel-action{margin-top:4px}
+		.selection-empty{color:var(--muted)}
+		.status.is-cancelled{background:rgba(202,0,19,.1);color:#a90010}
+		.booking-band h3{margin:0;font-size:19px;font-weight:900}
+		.booking-band p{margin:4px 0 0;color:var(--muted);font-size:13px}
+		.site-footer{padding:22px 0 36px;border-top:1px solid var(--line);color:var(--muted);font-size:11px;font-weight:800}
+		.footer-row{display:flex;justify-content:space-between;gap:16px}
+		.dialog{width:min(520px,calc(100% - 28px));max-height:min(90vh,820px);overflow:auto;padding:0;border:1px solid var(--line);border-radius:32px;background:var(--paper);color:var(--ink);box-shadow:var(--shadow)}
+		.dialog::backdrop{background:rgba(23,30,25,.46);backdrop-filter:blur(5px)}
+		.dialog-head{display:flex;justify-content:space-between;gap:20px;padding:22px;border-bottom:1px solid var(--line)}
+		.dialog-head h2{margin:0;font-size:26px;font-weight:900;letter-spacing:-.04em}
+		.dialog-head p{margin:4px 0 0;color:var(--muted);font-size:12px}
+		.dialog-close{width:40px;height:40px;border:1px solid var(--line);border-radius:50%;background:var(--white);font-size:20px}
+		.form{display:grid;gap:14px;padding:22px}
+		.form label{display:grid;gap:6px;color:var(--muted);font-size:10px;font-weight:900;letter-spacing:.1em;text-transform:uppercase}
+		.form input,.form select{width:100%;min-height:46px;padding:10px 12px;border:1px solid rgba(183,198,194,.75);border-radius:14px;background:var(--white);color:var(--ink);font-size:14px;font-weight:700}
+		.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+		.form-error{margin:0;color:var(--red);font-size:12px;font-weight:800}
+		.confirmation{padding:24px}
+		.confirmation-actions{display:flex;flex-wrap:wrap;gap:10px}
+		.confirmation-mark{width:48px;height:48px;display:grid;place-items:center;border-radius:50%;background:var(--red);color:#fff;font-size:24px}
+		.confirmation h3{margin:14px 0 8px;font-size:24px;font-weight:900}
+		.confirmation p{color:#48534d}
+		.portal{min-height:calc(100vh - 76px);padding:48px 0 80px}
+		.portal-heading{display:flex;justify-content:space-between;gap:20px;align-items:end;margin-bottom:26px}
+		.portal-heading h1{margin:0;font-size:clamp(34px,5vw,54px);font-weight:900;letter-spacing:-.05em;line-height:1}
+		.portal-heading p{margin:8px 0 0;color:var(--muted)}
+		.portal-layout{display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:18px;align-items:start}
+		.panel{overflow:hidden;border:1px solid var(--line);border-radius:28px;background:var(--white);box-shadow:var(--shadow)}
+		.panel-head{display:flex;justify-content:space-between;align-items:center;gap:14px;padding:20px;border-bottom:1px solid var(--line)}
+		.panel-head h2,.team-panel h2{margin:0;font-size:20px;font-weight:900}
+		.panel-head p,.team-panel>p{margin:4px 0 0;color:var(--muted);font-size:12px}
+		.filter-row{display:flex;gap:6px}
+		.filter{padding:7px 11px;border:1px solid transparent;border-radius:999px;background:transparent;color:var(--muted);font-size:10px;font-weight:900;text-transform:uppercase}
+		.filter[aria-pressed="true"]{border-color:var(--line);background:var(--paper);color:var(--ink)}
+		.job-list{display:grid;padding:0 20px}
+		.job-card{padding:18px 0;border-bottom:1px solid var(--line)}
+		.job-card:last-child{border-bottom:0}
+		.job-top,.job-footer,.customer-line{display:flex;align-items:center;justify-content:space-between;gap:12px}
+		.job-top h3{margin:0;font-size:17px;font-weight:900}
+		.status{padding:5px 10px;border-radius:999px;background:rgba(183,198,194,.25);font-size:9px;font-weight:900;text-transform:uppercase}
+		.status.is-progress{background:#f4eedc;color:#766223}
+		.status.is-done{background:#e5eee7;color:#386044}
+		.customer-line{justify-content:flex-start;margin:12px 0}
+		.avatar{width:38px;height:38px;display:grid;place-items:center;border-radius:50%;background:rgba(202,0,19,.1);color:var(--red);font-weight:900}
+		.customer-line strong,.customer-line small{display:block}
+		.customer-line strong{font-size:13px;font-weight:900}
+		.customer-line small{color:var(--muted);font-size:11px}
+		.job-details{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:7px 14px;color:#48534d;font-size:12px;overflow-wrap:anywhere}
+		.job-details a,.text-link{color:var(--red);font-size:11px;font-weight:900}
+		.job-footer{justify-content:flex-start;flex-wrap:wrap;margin-top:14px}
+		.job-footer select,.team-select{min-height:38px;max-width:220px;padding:7px 10px;border:1px solid var(--line);border-radius:12px;background:#fff;font-size:12px}
+		.job-action{min-height:38px;padding:0 14px;border:0;border-radius:999px;background:var(--red);color:#fff;font-size:11px;font-weight:900}
+		.job-action:hover{background:#a90010}
+		.job-note{display:grid;gap:8px;margin-top:14px;color:var(--muted);font-size:10px;font-weight:900;text-transform:uppercase}
+		.job-note textarea{min-height:72px;padding:10px;border:1px solid var(--line);border-radius:14px;font:600 13px 'Nunito',sans-serif;text-transform:none}
+		.team-panel{padding:20px}
+		.team-panel h2{margin-bottom:5px}
+		.team-panel .form{padding:16px 0}
+		.team-panel .form label{font-size:9px}
+		.team-panel .form input{min-height:42px}
+		.mechanic-registration{max-width:520px;margin:0 auto}
+		.mechanic-registration h2{margin:0;font-size:23px;font-weight:900}
+		.mechanic-registration>p{margin:6px 0 0;color:var(--muted);font-size:13px}
+		.mechanic-registration .form{padding:18px 0 0}
+		.mechanic-registration .form label{font-size:9px}
+		.mechanic-registration .form input{min-height:44px}
+		#activeMechanic{padding:14px 0}
+		#activeMechanic strong{font-size:15px;font-weight:900}
+		#activeMechanic p{margin:4px 0 0;color:var(--muted);font-size:12px}
+		.empty-state{padding:40px 10px;color:var(--muted);text-align:center}
+		.toast{position:fixed;z-index:40;right:20px;bottom:20px;max-width:min(420px,calc(100vw - 40px));padding:14px 18px;border-radius:16px;background:var(--ink);color:#fff;font-size:13px;font-weight:800;box-shadow:var(--shadow)}
+		@media(max-width:760px){
+			body{padding-bottom:86px}
+			.site-header{position:absolute;top:0;right:0;left:0;min-height:68px;padding:0 20px}
+			main{padding-top:68px}
+			.wrap{width:calc(100% - 32px)}
+			.nav{position:fixed;z-index:30;right:8px;bottom:8px;left:8px;height:64px;display:flex;justify-content:space-around;gap:0;padding:0 5px;border-radius:999px;background:var(--ink);box-shadow:0 12px 30px rgba(23,30,25,.24)}
+			.nav a{min-width:46px;min-height:48px;display:grid;place-items:center;color:var(--sage);font-size:9px;letter-spacing:.02em}
+			.nav-book{width:56px;height:56px;min-width:56px;display:grid;place-items:center;margin-top:-28px;border:4px solid var(--paper);border-radius:50%;background:var(--red);color:#fff;font-size:25px;font-weight:700;text-decoration:none;box-shadow:0 8px 20px rgba(202,0,19,.3)}
+			.nav-book:hover{color:#fff}
+			.portal-toggle{min-width:54px;min-height:46px;padding:0 5px;border:0;border-radius:50%;background:transparent;color:var(--sage);font-size:9px;line-height:1.1;text-align:center;box-shadow:none}
+			.portal-toggle:hover{background:transparent;color:#fff;transform:none}
+			.hero{width:calc(100% - 24px);min-height:690px;grid-template-columns:1fr;align-content:start;margin-top:10px;padding:56px 7vw 45px;border-radius:40px}
+			.hero:after{top:-68px;right:-92px;width:245px;height:245px}
+			.hero-copy{z-index:3}
+			.hero h1{max-width:11ch;font-size:clamp(38px,10vw,52px)}
+			.lede{font-size:14px}
+			.bike-art{width:112%;max-width:none;justify-self:center;margin-top:10px}
+			.hero-caption{right:7%;bottom:16px;font-size:8px}
+			.section{padding:68px 0}
+			.service-model,.material-grid,.study-card{grid-template-columns:1fr;gap:25px}
+			.study-card{padding:26px;border-radius:32px}
+			.study-copy h2{max-width:12ch}
+			.wheel-panel{padding:14px;border-radius:24px}
+			.service-grid{grid-template-columns:1fr}
+			.service-card{min-height:90px;padding:14px}
+			.booking-band{grid-template-columns:1fr;padding:20px;border-radius:24px}
+			.booking-actions{align-items:stretch;flex-direction:column}
+			.booking-actions .button,.booking-actions .cancel-action{width:100%}
+			.customer-booking-head{align-items:flex-start;flex-direction:column}
+			.portal{padding:30px 0 40px}
+			.portal-heading{align-items:flex-start;flex-direction:column}
+			.portal-layout{grid-template-columns:1fr}
+			.panel-head{align-items:flex-start;flex-direction:column}
+			.filter-row{width:100%;justify-content:space-between}
+			.job-list{padding:0 16px}
+		}
+		@media(max-width:420px){
+			.footer-row{flex-direction:column}
+			.info-row{grid-template-columns:76px minmax(0,1fr) auto;gap:8px}
+			.part-row{grid-template-columns:82px minmax(0,1fr) auto;gap:8px}
+			.job-details{grid-template-columns:1fr}
+			.form-grid{grid-template-columns:1fr}
+			.filter{padding:7px 8px;font-size:9px}
+		}
+		@media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}}
+	</style>
+</head>
+<body>
+	<header class="site-header">
+		<a class="brand" href="file:///C:/Users/preetham/.codex/Mr%20Mechanic.html#top">Mr Mechanic<span class="brand-dot">.</span></a>
+		<nav class="nav" aria-label="Main navigation">
+			<a href="file:///C:/Users/preetham/.codex/Mr%20Mechanic.html#approach">Method</a><a href="file:///C:/Users/preetham/.codex/Mr%20Mechanic.html#study">Study</a>
+			<a class="nav-book book-trigger" href="file:///C:/Users/preetham/.codex/Mr%20Mechanic.html#book" aria-label="Book a service">+</a>
+			<a href="file:///C:/Users/preetham/.codex/Mr%20Mechanic.html#services">Services</a>
+			<button class="portal-toggle" id="portalToggle" type="button" aria-pressed="false">Mechanic portal</button>
+		</nav>
+	</header>
+	<main id="customerView">
+		<section class="hero wrap" id="top" aria-labelledby="hero-title">
+			<div class="hero-copy">
+				<p class="eyebrow">Home service · Motorcycle care</p>
+				<h1 id="hero-title">Mechanical care, <span class="sage">brought to you.</span></h1>
+				<p class="lede">A mechanic at your address for punctures, servicing and the small things that keep a bike moving.</p>
+				<div class="actions"><a class="button" href="file:///C:/Users/preetham/.codex/Mr%20Mechanic.html#services">Explore services <span aria-hidden="true">↓</span></a><button class="button button-primary book-trigger" type="button">Book a visit <span aria-hidden="true">↗</span></button><button class="button" id="homePortalToggle" type="button">Mechanic Portal <span aria-hidden="true">↗</span></button></div>
+			</div>
+			<svg class="bike-art" viewBox="0 0 760 430" role="img" aria-labelledby="bike-title">
+				<title id="bike-title">Illustration of a motorcycle</title>
+				<g class="wheel"><circle cx="170" cy="320" r="85"></circle><circle cx="170" cy="320" r="65"></circle><circle cx="590" cy="320" r="85"></circle><circle cx="590" cy="320" r="65"></circle><circle cx="170" cy="320" r="7"></circle><circle cx="590" cy="320" r="7"></circle></g>
+				<g class="frame"><path d="M170 320 278 190h152l95 130H340L278 190 235 320H170M340 320l70-105 115 105M430 190l90-14 40 22M520 176l32-32 40 5M520 176l-26-31-26-2M225 232l42-68 100-17 74 31M269 164l-42-10-18 9 16 11M377 188l25-40 68 7 24 33M302 229c9-36 37-57 73-57h36l22 44-18 56h-84zM300 264h136l27 56H281zM281 286l-23 34M463 284l29 36"></path></g>
+				<path class="frame" d="m548 202-37 118m48-124 51 124"></path>
+				<path class="accent-line" d="M310 267h112"></path>
+			</svg>
+			<p class="hero-caption">Six home services · Prices in INR · By appointment</p>
+		</section>
+
+		<section class="section wrap" id="approach" aria-labelledby="approach-title">
+			<div class="service-model">
+				<div>
+					<p class="section-label">01 / Simple, at-home care</p>
+					<div class="section-heading"><h2 id="approach-title">The workshop comes <span class="sage">to your street.</span></h2><p>Choose a service, share your address and preferred time. Your mechanic comes to you and records the work clearly.</p></div>
+					<dl class="info-list">
+						<div class="info-row"><dt>Visit</dt><dd>Mechanic comes to your address</dd><dd class="value">HOME</dd></div>
+						<div class="info-row"><dt>Services</dt><dd>Puncture, service, oil, wash and checks</dd><dd class="value">06</dd></div>
+						<div class="info-row"><dt>Payment</dt><dd>Choose cash or UPI at booking</dd><dd class="value">YOUR CHOICE</dd></div>
+						<div class="info-row"><dt>Repair note</dt><dd>Parts and work noted by mechanic</dd><dd class="value">CLEAR</dd></div>
+					</dl>
+				</div>
+				<figure class="drawing-card">
+					<svg viewBox="0 0 500 390" role="img" aria-label="Measured motorcycle wheel illustration">
+						<g fill="none" stroke="#171e19" stroke-width="2"><circle cx="250" cy="185" r="142"></circle><circle cx="250" cy="185" r="103"></circle><circle cx="250" cy="185" r="12"></circle><path d="M250 43v38m142 104h-39M250 327v-39M108 185h39m-9-100 27 27m200-27-27 27m27 200-27-27M126 285l27-27"></path><path d="M250 185 345 79" stroke="#ca0013" stroke-width="4"></path><circle cx="345" cy="79" r="5" fill="#ca0013" stroke="none"></circle></g>
+						<g fill="#75817b" font-family="Nunito,sans-serif" font-size="12" font-weight="800"><text x="332" y="58">599.8 MM</text><text x="20" y="372">120/70 PROFILE · MODELLED SECTION</text></g>
+					</svg>
+					<figcaption>Scale model: 17 in rim + 120/70 tyre profile = 599.8 mm outer diameter.</figcaption>
+				</figure>
+			</div>
+		</section>
+
+		<section class="section wrap" id="study" aria-labelledby="study-title">
+			<div class="study-card">
+				<div class="study-copy"><p class="section-label">02 / Wheel study</p><h2 id="study-title">One turn, <span class="sage">measured.</span></h2><p>Move the slider to explore one full rotation of a modelled 17-inch motorcycle wheel.</p></div>
+				<div class="wheel-panel">
+					<svg viewBox="0 0 200 200" role="img" aria-label="Interactive motorcycle wheel rotation model">
+						<circle class="wheel-track" cx="100" cy="100" r="76"></circle>
+						<circle id="wheelProgress" class="wheel-progress" cx="100" cy="100" r="76" stroke-dasharray="477.5" stroke-dashoffset="477.5"></circle>
+						<circle cx="100" cy="100" r="54"></circle><circle cx="100" cy="100" r="8"></circle>
+						<g id="spokes" stroke="#171e19" stroke-width="1" opacity=".45"><line x1="100" y1="100" x2="152" y2="100"></line><line x1="100" y1="100" x2="145.03332099679082" y2="126"></line><line x1="100" y1="100" x2="126" y2="145.0333209967908"></line><line x1="100" y1="100" x2="100" y2="152"></line><line x1="100" y1="100" x2="74.00000000000001" y2="145.03332099679082"></line><line x1="100" y1="100" x2="54.96667900320919" y2="126"></line><line x1="100" y1="100" x2="48" y2="100"></line><line x1="100" y1="100" x2="54.966679003209194" y2="74"></line><line x1="100" y1="100" x2="73.99999999999997" y2="54.96667900320921"></line><line x1="100" y1="100" x2="99.99999999999999" y2="48"></line><line x1="100" y1="100" x2="126" y2="54.966679003209194"></line><line x1="100" y1="100" x2="145.0333209967908" y2="73.99999999999997"></line></g>
+						<text id="wheelLabel" x="100" y="104" fill="#171e19" text-anchor="middle" font-family="Nunito,sans-serif" font-size="11" font-weight="900">0°</text>
+					</svg>
+					<div class="study-controls"><label class="kicker" for="rotation" style="margin:0">Rotation</label><input id="rotation" type="range" min="0" max="360" value="0" aria-label="Wheel rotation in degrees"><output class="study-readout" id="rotationReadout">0°</output></div>
+					<p class="study-note">Modelled radius 299.9 mm · Arc length is calculated from radius × angle in radians.</p>
+				</div>
+			</div>
+		</section>
+
+		<section class="section wrap" id="practice" aria-labelledby="practice-title">
+			<div class="material-grid">
+				<div class="split-copy"><p class="section-label">03 / Care you can follow</p><h2 id="practice-title">Clear work. <span class="sage">Named parts.</span></h2><p>Each booking carries the service, visit address, payment preference and appointment time. Your mechanic can add a parts specification to the repair record.</p><div class="notice">Payment is selected at booking. This page records your preference and does not process a transaction.</div></div>
+				<div class="parts-list">
+					<div class="part-row"><strong>ENGINE OIL</strong><span>Oil change service</span><em>₹299</em></div>
+					<div class="part-row"><strong>OIL + FILTER</strong><span>General service</span><em>₹499</em></div>
+					<div class="part-row"><strong>CHAIN</strong><span>Clean chain and adjust brakes</span><em>CHECK</em></div>
+					<div class="part-row"><strong>PAYMENT</strong><span>Cash or UPI at your visit</span><em>CHOICE</em></div>
+					<div class="part-row"><strong>PARTS NOTE</strong><span>Added by assigned mechanic</span><em>PER JOB</em></div>
+				</div>
+			</div>
+		</section>
+
+		<section class="section wrap" id="services" aria-labelledby="services-title">
+			<div class="section-heading"><p class="section-label">04 / Home service menu</p><h2 id="services-title">Services, <span class="sage">at your address.</span></h2><p>Pick a service to see it in your booking. Every service includes a home visit.</p></div>
+			<div class="service-grid" id="serviceGrid" role="group" aria-label="Home mechanic services"><button type="button" class="service-card" aria-pressed="true" aria-label="Puncture Repair, 20 mins, ₹120"><span class="service-icon" aria-hidden="true">🛞</span><span><span class="service-name">Puncture Repair</span><span class="service-meta">20 mins · Home visit</span></span><span class="service-price">₹120</span></button><button type="button" class="service-card" aria-pressed="false" aria-label="General Service, 2 hours, ₹499"><span class="service-icon" aria-hidden="true">🧰</span><span><span class="service-name">General Service</span><span class="service-meta">2 hours · Home visit</span></span><span class="service-price">₹499</span></button><button type="button" class="service-card" aria-pressed="false" aria-label="Oil Change, 30 mins, ₹299"><span class="service-icon" aria-hidden="true">🛢️</span><span><span class="service-name">Oil Change</span><span class="service-meta">30 mins · Home visit</span></span><span class="service-price">₹299</span></button><button type="button" class="service-card" aria-pressed="false" aria-label="Breakdown - Home Visit, 45 mins, ₹249"><span class="service-icon" aria-hidden="true">🛵</span><span><span class="service-name">Breakdown - Home Visit</span><span class="service-meta">45 mins · Home visit</span></span><span class="service-price">₹249</span></button><button type="button" class="service-card" aria-pressed="false" aria-label="Bike Wash + Polish, 45 mins, ₹199"><span class="service-icon" aria-hidden="true">✨</span><span><span class="service-name">Bike Wash + Polish</span><span class="service-meta">45 mins · Home visit</span></span><span class="service-price">₹199</span></button><button type="button" class="service-card" aria-pressed="false" aria-label="Chain / Brake Check, 30 mins, ₹149"><span class="service-icon" aria-hidden="true">⚙️</span><span><span class="service-name">Chain / Brake Check</span><span class="service-meta">30 mins · Home visit</span></span><span class="service-price">₹149</span></button></div>
+			<div class="booking-band"><div><h3 id="selectionTitle">Puncture Repair · ₹120</h3><p id="selectionMeta">20 mins · Home visit</p></div><div class="booking-actions"><button class="cancel-action" id="clearSelectedService" type="button" aria-label="Clear selected service">× Cancel selection</button><button class="button button-primary book-trigger" type="button">Book this service <span aria-hidden="true">↗</span></button></div></div>
+		</section>
+
+		<section class="section wrap" id="my-bookings" aria-labelledby="customerBookingsTitle">
+			<div class="section-heading"><p class="section-label">05 / Your service requests</p><h2 id="customerBookingsTitle">Your bookings, <span class="sage">in one place.</span></h2><p>Requests saved in this browser can be cancelled until the service is completed.</p></div>
+			<div class="customer-booking-list" id="customerBookingList" aria-live="polite"><article class="customer-booking"><div class="customer-booking-head"><h3>Breakdown - Home Visit</h3><span class="status is-cancelled">Cancelled</span></div><p class="customer-booking-details">2026-11-07 · 45 mins · Splendar · ₹249 · idfoiseh vv iehfaehgEJGh aewhfkEJFA HEFJEBW</p></article></div>
+		</section>
+	</main>
+
+	<main id="portalView" hidden="">
+		<div class="portal wrap">
+			<div class="portal-heading"><div><p class="section-label">Mechanic workspace</p><h1>Mechanic Portal</h1><p>Register with your name and phone number to see and take service jobs.</p></div><button class="button" id="backToSite" type="button">Back to home</button></div>
+			<section class="panel mechanic-registration" id="mechanicRegistration" aria-labelledby="registrationTitle">
+				<h2 id="registrationTitle">Mechanic registration</h2>
+				<p>Register or return with the same name and phone number to access available jobs on this browser.</p>
+				<form class="form" id="mechanicForm">
+					<label>Your name<input name="name" autocomplete="name" required="" maxlength="80" placeholder="Full name"></label>
+					<label>Phone number<input name="phone" type="tel" autocomplete="tel" required="" minlength="7" maxlength="24" placeholder="Contact number"></label>
+					<button class="button button-primary" type="submit">Register / continue to jobs</button>
+					<p class="form-error" id="mechanicError" role="alert" hidden=""></p>
+				</form>
+			</section>
+			<div class="portal-layout" id="mechanicWorkspace" hidden="">
+				<section class="panel" aria-labelledby="jobs-title">
+					<div class="panel-head"><div><h2 id="jobs-title">Available &amp; accepted jobs</h2><p id="jobSubheading">Register to see service requests.</p></div><div class="filter-row" role="group" aria-label="Filter bookings"><button class="filter" type="button" data-filter="today" aria-pressed="false">Today</button><button class="filter" type="button" data-filter="all" aria-pressed="true">All jobs</button></div></div>
+					<div class="job-list" id="jobList"></div>
+				</section>
+				<aside class="panel team-panel">
+					<h2>Your mechanic profile</h2><p>You can take available requests and manage jobs assigned to you.</p>
+					<div id="activeMechanic"></div>
+					<button class="button" id="changeMechanic" type="button">Switch mechanic</button>
+				</aside>
+			</div>
+		</div>
+	</main>
+
+	<dialog class="dialog" id="bookingDialog" aria-labelledby="bookingTitle">
+		<div class="dialog-head"><div><h2 id="bookingTitle">Book your home visit</h2><p>Share a few details to request your service.</p></div><button class="dialog-close" type="button" aria-label="Close booking form">×</button></div>
+		<form class="form" id="bookingForm">
+			<label>Your name<input name="name" autocomplete="name" required="" maxlength="80" placeholder="Name"></label>
+			<label>Phone number<input name="phone" type="tel" autocomplete="tel" required="" maxlength="24" placeholder="Your contact number"></label>
+			<label>Service<select name="service" required=""><option value="">Choose a service</option><option value="Puncture Repair">Puncture Repair · ₹120</option><option value="General Service">General Service · ₹499</option><option value="Oil Change">Oil Change · ₹299</option><option value="Breakdown - Home Visit">Breakdown - Home Visit · ₹249</option><option value="Bike Wash + Polish">Bike Wash + Polish · ₹199</option><option value="Chain / Brake Check">Chain / Brake Check · ₹149</option></select></label>
+			<label>Motorcycle<input name="bike" required="" maxlength="100" placeholder="e.g. Honda Activa"></label>
+			<label>Visit address<input name="address" autocomplete="street-address" required="" maxlength="240" placeholder="Street, area and city"></label>
+			<div class="form-grid">
+				<label>Date<input name="date" type="date" required="" min="2026-11-07"></label>
+				<label>Preferred time<select name="time" required=""><option value="">Select a time</option><option>9:00 AM</option><option>11:00 AM</option><option>1:00 PM</option><option>3:00 PM</option><option>5:00 PM</option></select></label>
+			</div>
+			<label>Payment preference<select name="paymentMethod" required=""><option value="">Choose cash or UPI</option><option>Cash after service</option><option>UPI at visit</option></select></label>
+			<p class="form-error" id="bookingError" role="alert" hidden=""></p>
+			<button class="button button-primary" type="submit">Request booking</button>
+		</form>
+		<div class="confirmation" id="confirmation" hidden=""><div class="confirmation-mark" aria-hidden="true">✓</div><h3>Request received.</h3><p id="confirmationMessage"></p><div class="confirmation-actions"><button class="cancel-action" id="cancelConfirmedBooking" type="button">× Cancel this request</button><button class="button" id="doneBooking" type="button">Done</button></div></div>
+	</dialog>
+	<div class="toast" id="toast" role="status" aria-live="polite" hidden=""></div>
+	<footer class="site-footer wrap"><div class="footer-row"><span>© <span id="year">2026</span> Mr Mechanic · Home motorcycle care</span><span>Clear work. Care at your address.</span></div></footer>
+
+	<script>
+		'use strict';
+		const services=[
+			{name:'Puncture Repair',price:120,time:'20 mins',icon:'🛞'},
+			{name:'General Service',price:499,time:'2 hours',icon:'🧰'},
+			{name:'Oil Change',price:299,time:'30 mins',icon:'🛢️'},
+			{name:'Breakdown - Home Visit',price:249,time:'45 mins',icon:'🛵'},
+			{name:'Bike Wash + Polish',price:199,time:'45 mins',icon:'✨'},
+			{name:'Chain / Brake Check',price:149,time:'30 mins',icon:'⚙️'}
+		];
+		const keys={bookings:'mrMechanic.bookings.v1',mechanics:'mrMechanic.mechanics.v1',active:'mrMechanic.activeMechanic.v1'};
+		const $=(selector,root=document)=>root.querySelector(selector);
+		const grid=$('#serviceGrid'),dialog=$('#bookingDialog'),bookingForm=$('#bookingForm');
+		let selectedService=services[0],jobFilter='all',toastTimer,lastBookingId=null;
+		function readStore(key,fallback){
+			try{const value=localStorage.getItem(key);return value===null?fallback:JSON.parse(value)}
+			catch(error){console.error(`Could not read ${key} from local storage.`,error);return fallback}
+		}
+		function writeStore(key,value){
+			try{localStorage.setItem(key,JSON.stringify(value));return true}
+			catch(error){console.error(`Could not save ${key} to local storage.`,error);return false}
+		}
+		function newId(){return globalThis.crypto?.randomUUID?.()??`${Date.now()}-${Math.random().toString(36).slice(2)}`}
+		function escapeText(value){return String(value).replace(/[&<>"']/g,char=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[char]))}
+		function showToast(message){const toast=$('#toast');toast.textContent=message;toast.hidden=false;clearTimeout(toastTimer);toastTimer=setTimeout(()=>{toast.hidden=true},3500)}
+		function normalizedPhone(value){return String(value).replace(/\D/g,'')}
+		function renderServices(){
+			grid.replaceChildren();
+			bookingForm.elements.service.innerHTML='<option value="">Choose a service</option>'+services.map(service=>`<option value="${escapeText(service.name)}">${escapeText(service.name)} · ₹${service.price}</option>`).join('');
+			bookingForm.elements.service.value=selectedService?.name??'';
+			services.forEach((service,index)=>{
+				const button=document.createElement('button');button.type='button';button.className='service-card';button.setAttribute('aria-pressed',String(service.name===selectedService?.name));button.setAttribute('aria-label',`${service.name}, ${service.time}, ₹${service.price}`);
+				button.innerHTML=`<span class="service-icon" aria-hidden="true">${service.icon}</span><span><span class="service-name">${escapeText(service.name)}</span><span class="service-meta">${escapeText(service.time)} · Home visit</span></span><span class="service-price">₹${service.price}</span>`;
+				button.addEventListener('click',()=>selectService(index));grid.append(button);
+			});
+			$('#selectionTitle').textContent=selectedService?`${selectedService.name} · ₹${selectedService.price}`:'No service selected';
+			$('#selectionTitle').classList.toggle('selection-empty',!selectedService);
+			$('#selectionMeta').textContent=selectedService?`${selectedService.time} · Home visit`:'Choose a service to continue';
+			$('#clearSelectedService').hidden=!selectedService;
+		}
+		function selectService(index){if(index<0||index>=services.length)return;selectedService=services[index];renderServices()}
+		function clearSelectedService(){selectedService=null;renderServices()}
+		function setView(portal){
+			$('#customerView').hidden=portal;$('#portalView').hidden=!portal;
+			$('#portalToggle').setAttribute('aria-pressed',String(portal));
+			if(portal)renderPortal();
+			window.scrollTo({top:0,behavior:'smooth'});
+		}
+		function statusFor(booking){return booking.status??(booking.mechanicId?'scheduled':'new')}
+		function isCancellable(booking){return !['completed','cancelled'].includes(statusFor(booking))}
+		function statusLabelFor(status){return status==='in_progress'?'In progress':status==='completed'?'Completed':status==='scheduled'?'Scheduled':status==='cancelled'?'Cancelled':'New request'}
+		function renderCustomerBookings(){
+			const list=$('#customerBookingList'),bookings=readStore(keys.bookings,[]).slice().sort((a,b)=>String(b.createdAt??'').localeCompare(String(a.createdAt??'')));
+			list.replaceChildren();
+			if(!bookings.length){const empty=document.createElement('p');empty.className='empty-state';empty.textContent='No service requests yet. Book a service to see it here.';list.append(empty);return}
+			bookings.forEach(booking=>{
+				const card=document.createElement('article');card.className='customer-booking';
+				const head=document.createElement('div');head.className='customer-booking-head';
+				const title=document.createElement('h3');title.textContent=booking.service;
+				const status=document.createElement('span');status.className=`status ${statusFor(booking)==='cancelled'?'is-cancelled':statusFor(booking)==='completed'?'is-done':statusFor(booking)==='in_progress'?'is-progress':''}`;status.textContent=statusLabelFor(statusFor(booking));
+				head.append(title,status);card.append(head);
+				const details=document.createElement('p');details.className='customer-booking-details';details.textContent=`${booking.date} · ${booking.time} · ${booking.bike} · ₹${booking.price} · ${booking.address}`;
+				card.append(details);
+				if(isCancellable(booking)){const cancel=document.createElement('button');cancel.type='button';cancel.className='cancel-action';cancel.textContent='× Cancel service';cancel.setAttribute('aria-label',`Cancel ${booking.service}`);cancel.addEventListener('click',()=>cancelBooking(booking.id));card.append(cancel)}
+				list.append(card);
+			});
+		}
+		function renderPortal(){
+			const bookings=readStore(keys.bookings,[]),mechanics=readStore(keys.mechanics,[]),activeId=readStore(keys.active,''),active=mechanics.find(member=>member.id===activeId);
+			$('#mechanicRegistration').hidden=Boolean(active);
+			$('#mechanicWorkspace').hidden=!active;
+			if(!active){$('#jobList').replaceChildren();$('#activeMechanic').replaceChildren();return}
+			const today=new Date().toLocaleDateString('en-CA');
+			const shown=bookings.filter(item=>statusFor(item)!=='cancelled'&&(!item.mechanicId||item.mechanicId===active.id)&&(jobFilter==='all'||item.date===today)).sort((a,b)=>`${a.date} ${a.time}`.localeCompare(`${b.date} ${b.time}`));
+			$('#jobSubheading').textContent=`${shown.length} ${shown.length===1?'job':'jobs'} ${jobFilter==='today'?'for today':'available or assigned to you'}.`;
+			$('#jobList').replaceChildren();
+			if(!shown.length){const empty=document.createElement('p');empty.className='empty-state';empty.textContent='No service requests are available for this view yet.';$('#jobList').append(empty)}
+			shown.forEach(booking=>$('#jobList').append(makeJobCard(booking,active)));
+			const profile=$('#activeMechanic');profile.replaceChildren();
+			const name=document.createElement('strong');name.textContent=active.name;
+			const phone=document.createElement('p');phone.textContent=active.phone;
+			profile.append(name,phone);
+		}
+		function makeJobCard(booking,active){
+			const card=document.createElement('article');card.className='job-card';
+			const status=statusFor(booking),statusLabel=statusLabelFor(status),isAssignedToMe=booking.mechanicId===active.id;
+			const date=booking.date===new Date().toLocaleDateString('en-CA')?'Today':new Intl.DateTimeFormat(undefined,{month:'short',day:'numeric'}).format(new Date(`${booking.date}T12:00:00`));
+			card.innerHTML=`<div class="job-top"><h3>${escapeText(booking.service)}</h3><span class="status ${status==='in_progress'?'is-progress':status==='completed'?'is-done':''}">${statusLabel}</span></div>
+				<div class="customer-line"><span class="avatar" aria-hidden="true">${escapeText((booking.name||'?').trim().charAt(0).toUpperCase())}</span><span><strong>${escapeText(booking.name)}</strong><small>${escapeText(booking.phone)}</small></span></div>
+				<div class="job-details"><span>${escapeText(date)} · ${escapeText(booking.time)}</span><span>${escapeText(booking.bike)}</span><span>${escapeText(booking.address)}</span><span>${escapeText(booking.paymentMethod)}</span><a href="tel:${encodeURIComponent(booking.phone)}">Call customer</a></div>`;
+			const footer=document.createElement('div');footer.className='job-footer';
+			const action=document.createElement('button');action.type='button';action.className='job-action';
+			if(!booking.mechanicId){
+				action.textContent='Take this job';action.addEventListener('click',()=>takeBooking(booking.id));
+				footer.append(action);card.append(footer);
+			}else if(isAssignedToMe&&status!=='completed'){
+				action.textContent=status==='scheduled'?'Start job':'Complete job';action.addEventListener('click',()=>advanceBooking(booking.id));
+				footer.append(action);card.append(footer);
+			}
+			if(isAssignedToMe){
+				const note=document.createElement('label');note.className='job-note';note.textContent='Parts & repair notes';const textarea=document.createElement('textarea');textarea.maxLength=1000;textarea.placeholder='Parts used or needed for this repair';textarea.value=booking.repairSpecification??'';textarea.setAttribute('aria-label',`Parts and repair notes for ${booking.service}`);note.append(textarea);
+				const save=document.createElement('button');save.type='button';save.className='button';save.textContent='Save repair note';save.addEventListener('click',()=>saveRepairNote(booking.id,textarea.value));note.append(save);card.append(note);
+			}
+			return card;
+		}
+		function updateBooking(id,mutate,success){
+			const bookings=readStore(keys.bookings,[]),booking=bookings.find(item=>item.id===id);if(!booking)return false;
+			mutate(booking);
+			if(!writeStore(keys.bookings,bookings)){showToast('Could not save this update in the browser.');return false}
+			showToast(success);renderPortal();renderCustomerBookings();return true;
+		}
+		function cancelBooking(id){
+			const booking=readStore(keys.bookings,[]).find(item=>item.id===id);if(!booking)return;
+			if(!isCancellable(booking)){showToast('This service can no longer be cancelled.');return}
+			if(!window.confirm(`Cancel the ${booking.service} request?`))return;
+			if(updateBooking(id,item=>{item.status='cancelled';item.cancelledAt=new Date().toISOString()},'Service request cancelled.')&&id===lastBookingId){
+				$('#confirmationMessage').textContent=`Your ${booking.service} request has been cancelled.`;
+				$('#cancelConfirmedBooking').hidden=true;
+			}
+		}
+		function takeBooking(id){
+			const booking=readStore(keys.bookings,[]).find(item=>item.id===id);
+			const mechanics=readStore(keys.mechanics,[]),active=mechanics.find(member=>member.id===readStore(keys.active,''));
+			if(!active){showToast('Register as a mechanic before taking a job.');renderPortal();return}
+			if(!booking||booking.mechanicId||statusFor(booking)==='cancelled'){showToast('This job is no longer available.');renderPortal();return}
+			updateBooking(id,item=>{item.mechanicId=active.id;item.mechanicName=active.name;item.status='scheduled';item.acceptedAt=new Date().toISOString()},'Job taken. The customer details are now yours.');
+		}
+		function advanceBooking(id){
+			const booking=readStore(keys.bookings,[]).find(item=>item.id===id);if(!booking||statusFor(booking)==='cancelled')return;
+			const mechanics=readStore(keys.mechanics,[]),activeId=readStore(keys.active,''),active=mechanics.find(member=>member.id===activeId);
+			if(!active||booking.mechanicId!==active.id){showToast('You can only update jobs you have taken.');return}
+			updateBooking(id,booking=>{
+				const status=statusFor(booking);booking.status=status==='scheduled'?'in_progress':status==='in_progress'?'completed':status;
+			},'Job status updated.');
+		}
+		function saveRepairNote(id,value){
+			const booking=readStore(keys.bookings,[]).find(item=>item.id===id),activeId=readStore(keys.active,'');
+			if(!booking||booking.mechanicId!==activeId||statusFor(booking)==='cancelled'){showToast('You can only update notes for jobs you have taken.');return}
+			updateBooking(id,booking=>{booking.repairSpecification=value.trim()},'Repair note saved.');
+		}
+		function openBooking(){
+			if(!dialog.open){bookingForm.hidden=false;$('#confirmation').hidden=true;$('#bookingError').hidden=true;lastBookingId=null;bookingForm.elements.service.value=selectedService?.name??'';dialog.showModal()}
+		}
+		function setMinDate(){const now=new Date(),local=new Date(now.getTime()-now.getTimezoneOffset()*60000).toISOString().slice(0,10);bookingForm.elements.date.min=local;bookingForm.elements.date.value=local}
+		function submitBooking(event){
+			event.preventDefault();const data=Object.fromEntries(new FormData(bookingForm));const service=services.find(item=>item.name===data.service);
+			if(!service){$('#bookingError').textContent='Please choose a valid service.';$('#bookingError').hidden=false;return}
+			const bookings=readStore(keys.bookings,[]),booking={id:newId(),...data,service:service.name,price:service.price,time:service.time,status:'new',createdAt:new Date().toISOString()};bookings.push(booking);
+			if(!writeStore(keys.bookings,bookings)){$('#bookingError').textContent='Your booking could not be saved in this browser. Please try again.';$('#bookingError').hidden=false;return}
+			lastBookingId=booking.id;$('#cancelConfirmedBooking').hidden=false;bookingForm.hidden=true;$('#confirmation').hidden=false;$('#confirmationMessage').textContent=`${service.name} is requested for ${data.date} at ${data.time}. We’ll contact you at ${data.phone} to confirm the visit.`;renderPortal();renderCustomerBookings();
+		}
+		grid.addEventListener('click',event=>{const button=event.target.closest('.service-card');if(button)selectService([...grid.children].indexOf(button))});
+		$('#clearSelectedService').addEventListener('click',clearSelectedService);
+		document.querySelectorAll('.book-trigger').forEach(button=>button.addEventListener('click',event=>{event.preventDefault();openBooking()}));
+		$('.dialog-close').addEventListener('click',()=>dialog.close());
+		$('#doneBooking').addEventListener('click',()=>dialog.close());
+		$('#cancelConfirmedBooking').addEventListener('click',()=>cancelBooking(lastBookingId));
+		dialog.addEventListener('click',event=>{if(event.target===dialog)dialog.close()});
+		bookingForm.elements.service?.addEventListener('change',event=>{const index=services.findIndex(item=>item.name===event.target.value);if(index>=0)selectService(index);else clearSelectedService()});
+		bookingForm.addEventListener('submit',submitBooking);
+		$('#portalToggle').addEventListener('click',()=>setView(!$('#portalView').hidden));
+		$('#homePortalToggle').addEventListener('click',()=>setView(true));
+		$('#backToSite').addEventListener('click',()=>setView(false));
+		$('#changeMechanic').addEventListener('click',()=>{
+			if(!writeStore(keys.active,'')){showToast('Could not switch mechanic in this browser.');return}
+			$('#mechanicForm').reset();$('#mechanicError').hidden=true;renderPortal();
+		});
+		document.querySelectorAll('.filter').forEach(button=>button.addEventListener('click',()=>{jobFilter=button.dataset.filter;document.querySelectorAll('.filter').forEach(item=>item.setAttribute('aria-pressed',String(item===button)));renderPortal()}));
+		$('#mechanicForm').addEventListener('submit',event=>{
+			event.preventDefault();const form=event.currentTarget,mechanics=readStore(keys.mechanics,[]),data=new FormData(form),name=String(data.get('name')).trim(),phone=String(data.get('phone')).trim(),phoneKey=normalizedPhone(phone);
+			const error=$('#mechanicError');
+			if(phoneKey.length<7){error.textContent='Enter a valid phone number with at least 7 digits.';error.hidden=false;return}
+			let member=mechanics.find(item=>normalizedPhone(item.phone)===phoneKey);
+			if(member&&member.name.trim().toLocaleLowerCase()!==name.toLocaleLowerCase()){error.textContent='This phone number is already registered. Enter the registered name or use another number.';error.hidden=false;return}
+			const isNew=!member;
+			if(isNew){member={id:newId(),name,phone};mechanics.push(member);if(!writeStore(keys.mechanics,mechanics)){error.textContent='Could not save your registration in this browser.';error.hidden=false;return}}
+			if(!writeStore(keys.active,member.id)){error.textContent='Your registration was saved, but this browser could not open your mechanic session. Please try again.';error.hidden=false;return}
+			error.hidden=true;form.reset();renderPortal();showToast(isNew?`Welcome, ${member.name}. You can now take available jobs.`:`Welcome back, ${member.name}.`);
+		});
+		$('#rotation').addEventListener('input',event=>{const degrees=Number(event.target.value),circumference=477.5;$('#wheelProgress').style.strokeDashoffset=String(circumference*(1-degrees/360));$('#rotationReadout').value=`${degrees}° · ${Math.round(299.9*degrees*Math.PI/180)} mm`;$('#wheelLabel').textContent=`${degrees}°`});
+		const spokes=$('#spokes');for(let angle=0;angle<360;angle+=30){const line=document.createElementNS('http://www.w3.org/2000/svg','line');const radians=angle*Math.PI/180;line.setAttribute('x1','100');line.setAttribute('y1','100');line.setAttribute('x2',String(100+52*Math.cos(radians)));line.setAttribute('y2',String(100+52*Math.sin(radians)));spokes.append(line)}
+		$('#year').textContent=String(new Date().getFullYear());renderServices();setMinDate();renderPortal();renderCustomerBookings();
+		window.addEventListener('storage',event=>{if(Object.values(keys).includes(event.key)){renderPortal();renderCustomerBookings()}});
+	</script>
+
+</body></html>
